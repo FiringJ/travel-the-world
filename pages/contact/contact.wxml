@@ -1,0 +1,94 @@
+<view class="contact-page-container">
+  <!-- 自定义 Banner/Header -->
+  <view class="contact-banner">
+    <view class="cute-back" bindtap="goBack">
+      <text class="fas fa-chevron-left">[&lt;]</text>
+    </view>
+    <view class="contact-banner-content">
+      <text class="emoji-decorator">✈️</text>
+      <text class="h1-like">{{companyName}}</text>
+      <text class="emoji-decorator">🌍</text>
+      <text class="p-like">{{slogan}}</text>
+    </view>
+  </view>
+
+  <!-- 可滚动内容区 -->
+  <scroll-view scroll-y class="content-scroll">
+    <view class="main-content-padding">
+      <!-- 关于我们 -->
+      <view class="contact-card mb-5">
+        <view class="cute-title mb-4">关于我们</view>
+        <text class="p-like text-sm text-gray-600 leading-relaxed">{{aboutUsText}}</text>
+        <view class="flex flex-wrap mt-4">
+          <block wx:for="{{tags}}" wx:key="id">
+            <view class="group-tag">
+              <text class="fas mr-1">{{item.iconPlaceholder}}</text> {{item.text}}
+            </view>
+          </block>
+        </view>
+      </view>
+
+      <!-- 联系我们 -->
+      <view class="cute-title mb-3">联系我们</view>
+      <block wx:for="{{contactMethods}}" wx:key="id">
+        <view class="contact-card flex items-center mb-3">
+          <view class="contact-icon">
+            <text class="fab">{{item.iconPlaceholder}}</text>
+          </view>
+          <view>
+            <view class="font-medium">{{item.title}}</view>
+            <text class="text-xs text-gray-500 mt-1">{{item.detail}}</text>
+          </view>
+        </view>
+      </block>
+
+      <!-- 旅行顾问 -->
+      <view class="cute-title mb-3">旅行顾问</view>
+      <view class="qrcode-container">
+        <view class="qrcode-bg"></view>
+        <view class="qrcode-content">
+          <image src="{{travelAdvisor.qrCode}}" alt="创始人微信" class="qrcode-image" mode="aspectFit"></image>
+          <view class="qrcode-title">{{travelAdvisor.name}}</view>
+          <text class="qrcode-subtitle">{{travelAdvisor.description}}</text>
+          <view class="flex justify-center mt-3">
+            <block wx:for="{{travelAdvisor.badges}}" wx:key="id">
+              <view class="group-info">
+                <text class="fas">{{item.iconPlaceholder}}</text>
+                <text>{{item.text}}</text>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+
+      <!-- 加入主题交流群 -->
+      <view class="cute-title mb-3 mt-5">加入主题交流群</view>
+      <block wx:for="{{groups}}" wx:key="id">
+        <view class="contact-card mt-3">
+          <view class="flex items-center mb-3">
+            <view class="group-icon">
+              <text class="fas">{{item.iconPlaceholder}}</text>
+            </view>
+            <view>
+              <view class="font-medium">{{item.name}}</view>
+              <text class="text-xs text-gray-500 mt-1">{{item.description}}</text>
+            </view>
+          </view>
+          <view class="flex justify-center mb-2">
+            <image src="{{item.qrCode}}" alt="群二维码" class="w-32 h-32 rounded-xl border" mode="aspectFit"></image>
+          </view>
+          <view class="flex justify-center text-xs text-gray-500">
+            <view class="inline-flex items-center mr-4">
+              <text class="fas text-accent-color mr-1">{{item.memberIcon}}</text>
+              <text>{{item.members}}</text>
+            </view>
+            <view class="inline-flex items-center">
+              <text class="fas text-accent-color mr-1">{{item.activityIcon}}</text>
+              <text>{{item.activity}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view> 
