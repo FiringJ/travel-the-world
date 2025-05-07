@@ -59,6 +59,66 @@
                 </view>
             </view>
         </view>
+        <!-- Card 3 (Japan) -->
+        <view class="masonry-item">
+            <view class="card">
+                <image src="https://images.unsplash.com/photo-1528181304800-259b08848526?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="日本风光" class="w-full" mode="widthFix"></image>
+                <view class="card-content">
+                    <text class="tag">日本</text>
+                    <view class="font-medium mt-2">樱花季温泉乐享</view>
+                    <view class="location-badge">
+                        <text class="fas fa-map-marker-alt">[M]</text>
+                        <text>东京 · 京都 · 大阪</text>
+                    </view>
+                    <view class="price-tag mt-2">¥7,999起</view>
+                </view>
+            </view>
+        </view>
+        <!-- Card 4 (Nordics) -->
+        <view class="masonry-item">
+            <view class="card">
+                <image src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="北欧风光" class="w-full" mode="widthFix"></image>
+                <view class="card-content">
+                    <text class="tag">北欧</text>
+                    <view class="font-medium mt-2">峡湾极光奇幻之旅</view>
+                    <view class="location-badge">
+                        <text class="fas fa-map-marker-alt">[M]</text>
+                        <text>挪威 · 瑞典 · 芬兰</text>
+                    </view>
+                    <view class="price-tag mt-2">¥19,999起</view>
+                </view>
+            </view>
+        </view>
+        <!-- Card 5 (Family) -->
+        <view class="masonry-item">
+            <view class="card">
+                <image src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="亲子游" class="w-full" mode="widthFix"></image>
+                <view class="card-content">
+                    <text class="tag">亲子</text>
+                    <view class="font-medium mt-2">环球主题乐园欢乐游</view>
+                    <view class="location-badge">
+                        <text class="fas fa-map-marker-alt">[M]</text>
+                        <text>新加坡 · 香港 · 东京</text>
+                    </view>
+                    <view class="price-tag mt-2">¥10,999起</view>
+                </view>
+            </view>
+        </view>
+        <!-- Card 6 (USA) -->
+        <view class="masonry-item">
+            <view class="card">
+                <image src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="美国风光" class="w-full" mode="widthFix"></image>
+                <view class="card-content">
+                    <text class="tag">美国</text>
+                    <view class="font-medium mt-2">黄石公园自然探秘</view>
+                    <view class="location-badge">
+                        <text class="fas fa-map-marker-alt">[M]</text>
+                        <text>黄石 · 大提顿 · 盐湖城</text>
+                    </view>
+                    <view class="price-tag mt-2">¥15,999起</view>
+                </view>
+            </view>
+        </view>
     </view>
 
     <!-- 悬浮按钮 -->

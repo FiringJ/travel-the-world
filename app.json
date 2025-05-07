@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/contact/contact"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -21,8 +21,8 @@
         "selectedIconPath": "static/images/tabbar/house-active.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "探索",
+        "pagePath": "pages/contact/contact",
+        "text": "我的",
         "iconPath": "static/images/tabbar/user.png",
         "selectedIconPath": "static/images/tabbar/user-active.png"
       }

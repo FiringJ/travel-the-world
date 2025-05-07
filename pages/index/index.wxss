@@ -78,6 +78,7 @@ page {
     "Helvetica Neue", Arial, sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
+  padding-top: 30px; /* 为状态栏预留空间，建议后续由JS动态获取并设置 */
   /* padding-bottom: 55px; /* Temporarily removed as native tabBar handles space */
 }
 
