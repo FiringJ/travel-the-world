@@ -4,7 +4,7 @@
     <view class="app-header bg-white">
         <view class="app-title">
             <!-- 暂时用文字替代 Font Awesome 图标 -->
-            <text class="fas fa-paper-plane text-xl mr-1">[ICON]</text> 环游飞屋
+            <text class="fas fa-paper-plane text-xl">环游飞屋</text> 
         </view>
     </view>
 
